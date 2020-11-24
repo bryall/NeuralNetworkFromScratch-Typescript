@@ -1,0 +1,39 @@
+{
+    "name": "neuralnetworkfromscratch-typescript",
+    "version": "1.0.0",
+    "description": "https://nnfs.io typescript implementation",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc",
+        "p": "node ./node_modules/.bin/ts-node ./src/index.ts 2> out",
+        "pi": "node --inspect ./node_modules/.bin/ts-node ./src/index.ts 2> out",
+        "pib": "node --inspect-brk ./node_modules/.bin/ts-node ./src/index.ts 2> out",
+        "t": "node --expose-gc ./node_modules/.bin/jest",
+        "tib": "node --inspect-brk --expose-gc ./node_modules/.bin/jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bryall/NeuralNetworkFromScratch-Typescript.git"
+    },
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/bryall/NeuralNetworkFromScratch-Typescript/issues"
+    },
+    "homepage": "https://github.com/bryall/NeuralNetworkFromScratch-Typescript#readme",
+    "dependencies": {
+        "@types/jest": "^25.1.2",
+        "@types/node": "^13.1.6",
+        "jest": "^25.1.0",
+        "ts-jest": "^25.2.0",
+        "ts-loader": "^6.2.1",
+        "ts-node": "^8.6.2"
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^4.8.2",
+        "@typescript-eslint/parser": "^4.8.2",
+        "eslint": "^7.14.0",
+        "prettier": "2.2.0",
+        "typescript": "^3.9.7"
+    }
+}
